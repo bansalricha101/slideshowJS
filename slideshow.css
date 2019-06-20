@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 400px;
+    margin-left: 300px;
+}
+
+.mySlides {}
+
+img {
+    vertical-align: middle;
+    width: 50%;
+    height: 100%;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 0.3s;
+
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    padding: 16px;
+    width: auto;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    color: rgb(145, 221, 245);
+    cursor: pointer;
+    margin-top: -22px;
+    font-size: 25px;
+    transition: 0.6s ease;
+    font-weight: bold;
+    user-select: none;
+    left: 10px;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+    margin-top: 5px;
+    left: 45%;
+
+}
+
+.dotted {
+    margin-left: 600px;
+    margin-top: 5px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.next {
+    left: 45%;
+    /* float: left; */
+    border-radius: 3px;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.4;
+
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.numbertext {
+    color: rgb(145, 221, 245);
+    position: absolute;
+    top: 0;
+    padding: 5px;
+    font-size: 20px;
+}
+
+.text {
+    color: rgb(145, 221, 245);
+    text-align: center !important;
+    position: absolute;
+    bottom: 8px;
+    margin-left: 20px;
+    font-size: 20px;
+
+}
